@@ -4,6 +4,20 @@
 @theme{
     --font-dm:"DM Sans", sans-serif;
 }
+.slick-dots .slick-active div{
+    border-right: 3px solid #262626 !important;
+    color: #262626 !important;
 
+}
 
- 
+.slick-slider .slick-initialized button{
+   display: flex;
+}
+@media (max-width: 620px){
+    .slick-dots{
+        left: 1% !important;
+        padding: 0px !important;
+        font-size: 12px !important;
+    }
+
+}

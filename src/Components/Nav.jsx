@@ -39,21 +39,60 @@ const Nav = () => {
    return (
       <section className="bg-[#F5F5F3]">
          <Container>
-            <div className="flex py-[20px] items-center">
-               <div className="w-2/7 relative">
+            <div className="flex py-[10px] items-center ">
+               <div className="w-3/12 relative">
                   <div ref={cateRaf} className="flex items-center gap-2 cursor-pointer">
-                     <HiOutlineBars3BottomLeft />
-                     <h2>Shop by Category</h2>
+                     <HiOutlineBars3BottomLeft className="text-black font-dm font-bold" />
+                     <h2 className="text-black font-dm font-bold">Shop by Category</h2>
                   </div>
                   {show &&
 
-                     <div className="py-3 absolute left-0 top-[30px] w-full ">
+                     <div className="py-3 absolute left-0 top-[30px] w-full z-20">
                         <ul className="bg-[#262626] text-[#ffffff70]  pl-[10px] relative shadow-xl">
                            <li className=" group hover:text-[#FFFFFF] pl-[20px] duration-200 ease-in-out hover:pl-[30px] py-2 border-b-[1px] border-[#2D2D2D] flex items-center justify-between pr-[10px] cursor-pointer">Accesories <FaCaretRight />
 
-                              <div className=" absolute top-0 right-[-250px] z-10 bg-white px-[20px] shadow-xl PY-2 opacity-0 group-hover:opacity-100 w-[250px] ">
-                                 <h3 className=" font-bold font-dm text-[16px] text-black">Accesories</h3>
-                                 <ul>
+                              <div className=" absolute top-0 right-[-550px] z-10 bg-white px-[20px] shadow-xl PY-2 invisible group-hover:visible w-[550px] flex justify-between ">
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Accesories</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Accesories</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Accesories</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Accesories</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
@@ -69,9 +108,48 @@ const Nav = () => {
 
                            </li>
                            <li className=" group hover:text-[#FFFFFF] pl-[20px] duration-200 ease-in-out hover:pl-[30px] py-2 border-b-[1px] border-[#2D2D2D] flex items-center justify-between pr-[10px] cursor-pointer">Furniture <FaCaretRight />
-                              <div className="absolute top-0 right-[-250px] z-10 bg-white px-[20px] shadow-xl PY-2 hidden group-hover:block w-[250px] ">
-                                 <h3 className=" font-bold font-dm text-[16px] text-black">Furniture </h3>
-                                 <ul>
+                              <div className=" absolute top-0 right-[-550px] z-10 bg-white px-[20px] shadow-xl PY-2 invisible group-hover:visible w-[550px] flex justify-between ">
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Furniture</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Furniture</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Furniture</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Furniture</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
@@ -87,9 +165,48 @@ const Nav = () => {
 
                            </li>
                            <li className=" group hover:text-[#FFFFFF] pl-[20px] duration-200 ease-in-out hover:pl-[30px] py-2 border-b-[1px] border-[#2D2D2D] flex items-center justify-between pr-[10px] cursor-pointer">Electronics <FaCaretRight />
-                              <div className="absolute top-0 right-[-250px] z-10 bg-white px-[20px] shadow-xl PY-2 hidden group-hover:block w-[250px] ">
-                                 <h3 className=" font-bold font-dm text-[16px] text-black">Electronics</h3>
-                                 <ul>
+                              <div className=" absolute top-0 right-[-550px] z-10 bg-white px-[20px] shadow-xl PY-2 invisible group-hover:visible w-[550px] flex justify-between ">
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Electronics</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Electronics</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Electronics</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Electronics</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
@@ -104,10 +221,48 @@ const Nav = () => {
                               </div>
                            </li>
                            <li className=" group hover:text-[#FFFFFF] pl-[20px] duration-200 ease-in-out hover:pl-[30px] py-2 border-b-[1px] border-[#2D2D2D] flex items-center justify-between pr-[10px] cursor-pointer">Clothes <FaCaretRight />
+                           <div className=" absolute top-0 right-[-550px] z-10 bg-white px-[20px] shadow-xl PY-2 invisible group-hover:visible w-[550px] flex justify-between ">
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Clothes</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
 
-                              <div className="absolute top-0 right-[-250px] z-10 bg-white px-[20px] shadow-xl PY-2 hidden group-hover:block w-[250px] ">
-                                 <h3 className=" font-bold font-dm text-[16px] text-black">Clothes </h3>
-                                 <ul>
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Clothes</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Clothes</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Clothes</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
@@ -120,12 +275,52 @@ const Nav = () => {
 
                                  </ul>
                               </div>
+                              
                            </li>
                            <li className=" group hover:text-[#FFFFFF] pl-[20px] duration-200 ease-in-out hover:pl-[30px] py-2 border-b-[1px] border-[#2D2D2D] flex items-center justify-between pr-[10px] cursor-pointer">Bags <FaCaretRight />
 
-                              <div className="absolute top-0 right-[-250px] z-10 bg-white px-[20px] shadow-xl PY-2 hidden group-hover:block w-[250px] ">
-                                 <h3 className=" font-bold font-dm text-[16px] text-black">Bags </h3>
-                                 <ul>
+                              <div className=" absolute top-0 right-[-550px] z-10 bg-white px-[20px] shadow-xl PY-2 invisible group-hover:visible w-[550px] flex justify-between ">
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Bags</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Bags</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Bags</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Bags</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
@@ -140,9 +335,48 @@ const Nav = () => {
                               </div>
                            </li>
                            <li className=" group hover:text-[#FFFFFF] pl-[20px] duration-200 ease-in-out hover:pl-[30px] py-2 flex items-center justify-between pr-[10px] cursor-pointer">Home appliances <FaCaretRight />
-                              <div className="absolute top-0 right-[-250px] z-10 bg-white px-[20px] shadow-xl PY-2 hidden group-hover:block w-[250px] ">
-                                 <h3 className=" font-bold font-dm text-[16px] text-black">Home appliances</h3>
-                                 <ul>
+                              <div className=" absolute top-0 right-[-650px] z-10 bg-white px-[20px] shadow-xl PY-2 invisible group-hover:visible w-[650px] flex justify-between ">
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Home appliances</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Home appliances</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Home appliances</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FOUR</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">FIVE</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SIX</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">SEVEN</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">EIGHT</li>
+                                    <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">NINE</li>
+
+                                 </ul>
+                                 <ul className="pt-[5px]">
+                                    <li className=" font-bold font-dm text-[16px] text-black">Home appliances</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">ONE</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">TWO</li>
                                     <li className=" text-[#767676] hover:text-black duration-300 ease-in-out font-dm text-[16px] ">THREE</li>
@@ -165,16 +399,16 @@ const Nav = () => {
 
 
                </div>
-               <div className="w-4/7">
+               <div className="w-6/12">
                   <div className="flex relative">
-                     <input type="text" placeholder="Search Products" className="w-full bg-[#FFFFFF] rounded-full py-3 pl-4 outline-0" />
+                     <input type="text" placeholder="Search Products" className="w-full bg-[#FFFFFF]  py-3 pl-4 outline-0" />
                      <div className=" absolute top-[50%] right-0 translate-y-[-50%] pr-[20px]">
                         <MdSearch />
                      </div>
                   </div>
                </div>
-               <div className="w-1/7">
-                  <div className="flex justify-end gap-x-3 relative ">
+               <div className="w-2/12 z-20">
+                  <div className="flex justify-end gap-5 relative ">
                      <div ref={cateRof} className="flex">
                         <FaUser />
                         <FaSortDown />
@@ -189,18 +423,18 @@ const Nav = () => {
                         </div>
 
                      }
-                     <div className=" relative" ref={cateRoff}>
+                     <div className=" relative " ref={cateRoff}>
                         <FaCartShopping />
                      </div>
                      {roffShow &&
 
 
-                        <div className="absolute top-[57px] right-0  gap-3 w-[300px] shadow-md ">
+                        <div className="absolute top-[57px] right-0  gap-3 w-[300px] shadow-md z-20">
                            <div className="flex bg-[#F5F5F3] items-center  justify-between p-[10px]">
                               <div className="bg-[#F5F5F3] ">
                                  <img className="w-20 bg-[#D8D8D8]" src={bag} alt="" />
                               </div>
-                              <div className="text">
+                              <div className="text-black">
                                  <p>Black Smart Watch</p>
                                  <p>$44.00</p>
                               </div>
@@ -208,7 +442,7 @@ const Nav = () => {
                                  <HiMiniXMark />
                               </div>
                            </div>
-                           <div className="p-[10px]">
+                           <div className="p-[10px] bg-white">
                               <p className="pl-[14px] pb-[10px] text-[#767676]">Subtotal: <span className=" font-semibold text-black">$44.00</span></p>
                               <div className=" justify-around flex">
                                  <div className="">

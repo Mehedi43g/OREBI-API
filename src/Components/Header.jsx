@@ -6,7 +6,7 @@ import { useState } from "react";
 const Header = () => {
     let [menu, setMenu] = useState(false)
   return (
-        <section className="py-[20px]">
+        <section className="py-[10px]">
             <Container>
                 <div className="lg:flex justify-between items-center">
                     <div className="w-2/12 ">
