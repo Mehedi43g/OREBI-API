@@ -8,16 +8,23 @@
     border-right: 3px solid #262626 !important;
     color: #262626 !important;
 
+
 }
 
 .slick-slider .slick-initialized button{
    display: flex;
 }
-@media (max-width: 620px){
+@media (max-width: 920px){
     .slick-dots{
         left: 1% !important;
         padding: 0px !important;
         font-size: 12px !important;
     }
+    .slick-dots .slick-active div{
+        padding: 0px !important;
+}
+element {
+	padding: 0px 0px !important;
+}
 
 }
