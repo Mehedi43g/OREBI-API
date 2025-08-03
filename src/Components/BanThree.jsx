@@ -13,6 +13,7 @@ import { GiSelfLove } from "react-icons/gi";
 import { TfiReload } from "react-icons/tfi";
 import { useContext } from "react";
 import { ApiData } from "./ContextApi";
+import { Link } from "react-router-dom";
 
 const BanThree = () => {
     let data = useContext(ApiData)
@@ -61,35 +62,42 @@ const BanThree = () => {
                     <Slider {...settings}>
                         {data.map((item)=>(
 
+                       <Link to="/shop">
                         <div>
                             <div className=" relative">
-                                <div className="relative w-[95%] group">
+                                <div className="relative w-[90%]  group">
                                     <img src={item.thumbnail} alt="" />
                                     <div className=" absolute top-4 left-3 z-5 " >
-                                        <p className=" py-[10px] px-[30px] border-[1px] border-black bg-[#262626] text-white font-bold text-[14px] font-dm ">10%</p>
+                                        <p className=" py-[5px] px-[20px] border-[1px]  bg-[#ff0000] text-white font-bold text-[14px] font-dm ">{item.discountPercentage}%</p>
                                     </div>
                                     <div className=" absolute right-0 bottom-0 w-[300px] bg-white hidden group-hover:block ">
                                         <div className="">
-                                            <div className="flex items-center gap-2 justify-end py-[10px] pr-[10px]">
+                                            <div className="flex items-center gap-2 justify-end py-[10px] pr-[10px] cursor-pointer">
                                                 <p>Add to Wish List</p>
                                             <GiSelfLove />
                                             </div>
-                                            <div className="flex items-center gap-2 justify-end py-[10px] pr-[10px]">
+                                            <div className="flex items-center gap-2 justify-end py-[10px] pr-[10px] cursor-pointer">
                                                 <TfiReload />
                                             </div>
-                                            <div className="flex items-center gap-2 justify-end py-[10px] pr-[10px]">
+                                            <div className="flex items-center gap-2 justify-end py-[10px] pr-[10px] cursor-pointer">
                                                 <p>Add to Cart</p>
                                                 <FaShoppingCart />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex gap-20 pt-5 ">
-                                    <p className="font-bold font-dm text-[16px] text-[#262626]">Basic Crew  Neck Tee</p>
-                                    <p className="font-dm text-[#767676]">$44.00</p>
+                                <div className="flex justify-between pl-[20px] pr-[20px] pt-5 ">
+                                    <div className="">
+                                        <p className="font-bold font-dm text-[16px] text-[#262626]">{item.title}</p>
+                                    </div>
+                                    <div className="">
+                                        <p className="font-dm text-[#767676]">${item.price}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                       
+                       </Link>
 
                         ))}
                         

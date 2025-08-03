@@ -11,14 +11,11 @@ const Home = () => {
      
     return (
         <>
-        <Header/>
-        <Nav/>
         <Banner/>
         <Banntw/>
         <BanThree/>
         <BigTime/>
         <BanTxt/>
-        <Footer/>
         </>
     )
 }
