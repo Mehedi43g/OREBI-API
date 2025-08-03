@@ -13,7 +13,7 @@ const Header = () => {
                         <img src={logo} alt="" />
                     </div>
                     <div className="lg:w-8/12 w-full relative ">
-                        <ul className={` h-[110px] lg:h-[0px] font-dm text-[14px] text-[#767676] justify mx-auto lg:flex gap-3 flex-wrap justify-start  ${menu ? "h-0 opacity-0" : " bg-[#3a3a13] lg:bg-[#fff] h-[100px] opacity-100"} lg:h-auto lg:opacity-100 duration-300 overflow-hidden }`} >
+                        <ul className={` h-[110px] lg:h-[0px] font-dm text-[14px] text-[#767676] justify mx-auto lg:flex gap-3 flex-wrap justify-start  ${menu ? "h-0 hidden" : " bg-[#3a3a13] lg:bg-[#fff] h-[100px] block"} lg:h-auto lg:opacity-100 duration-300 overflow-hidden }`} >
                             <li className="hover:font-bold hover:text-[#262626] lg:w-[80px] duration-200 cursor-pointer text-center esay-in-out">Home</li>
                             <li className="hover:font-bold hover:text-[#262626] lg:w-[80px] duration-200 cursor-pointer text-center esay-in-out">Shop</li>
                             <li className="hover:font-bold hover:text-[#262626] lg:w-[80px] duration-200 cursor-pointer text-center esay-in-out">About</li>

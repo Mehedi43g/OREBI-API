@@ -43,7 +43,7 @@ const Nav = () => {
                <div className="w-3/12 relative">
                   <div ref={cateRaf} className="flex items-center gap-2 cursor-pointer">
                      <HiOutlineBars3BottomLeft className="text-black font-dm font-bold" />
-                     <h2 className="text-black font-dm font-bold">Shop by Category</h2>
+                     <h2 className="text-black font-dm font-bold text-[14px] sm:text-[10px] md:text-[20px] lg:text-[24px] ">Shop by Category</h2>
                   </div>
                   {show &&
 

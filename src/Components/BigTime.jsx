@@ -1,6 +1,4 @@
 import ktim from '../assets/ktimes.png'
-
-import sl1 from '../assets/sl1.png';
 import Container from './Container'
 
 const BigTime = () => {

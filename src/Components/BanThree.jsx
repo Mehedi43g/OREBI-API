@@ -11,8 +11,13 @@ import ls4 from '../assets/ls4.png';
 import { FaChevronLeft, FaChevronRight, FaShoppingCart } from "react-icons/fa";
 import { GiSelfLove } from "react-icons/gi";
 import { TfiReload } from "react-icons/tfi";
+import { useContext } from "react";
+import { ApiData } from "./ContextApi";
 
 const BanThree = () => {
+    let data = useContext(ApiData)
+    console.log(data);
+    
     const PrevArrow = ({ onClick }) => (
         <button
             onClick={onClick}
@@ -54,10 +59,12 @@ const BanThree = () => {
             <Container>
                 <div>
                     <Slider {...settings}>
+                        {data.map((item)=>(
+
                         <div>
                             <div className=" relative">
                                 <div className="relative w-[95%] group">
-                                    <img src={sl1} alt="" />
+                                    <img src={item.thumbnail} alt="" />
                                     <div className=" absolute top-4 left-3 z-5 " >
                                         <p className=" py-[10px] px-[30px] border-[1px] border-black bg-[#262626] text-white font-bold text-[14px] font-dm ">10%</p>
                                     </div>
@@ -83,10 +90,12 @@ const BanThree = () => {
                                 </div>
                             </div>
                         </div>
+
+                        ))}
                         
 
 
-                        <div>
+                        {/* <div>
                              <div className=" relative">
                                 <div className="relative w-[95%] group">
                                     <img src={sl2} alt="" />
@@ -293,7 +302,7 @@ const BanThree = () => {
                                 </div>
                             </div>
                        
-                        </div>
+                        </div> */}
 
                     </Slider>
 
