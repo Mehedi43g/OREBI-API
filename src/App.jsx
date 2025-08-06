@@ -2,11 +2,11 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Home from './Pages/Home'
-import Shop from './Components/Shop'
 import Layouts from './Components/Layouts'
-import About from './Components/About'
-import Contacts from './Components/Contacts'
-import Journal from './Components/Journal'
+import About from './Pages/About'
+import Shop from './Pages/Shop'
+import Contacts from './Pages/Contacts'
+import Journal from './Pages/Journal'
 let router= createBrowserRouter(createRoutesFromElements(
   <Route element={<Layouts/>}>
     <Route index element={<Home/>}></Route>
