@@ -1,9 +1,5 @@
 import Slider from "react-slick";
 import Container from "./Container";
-import sl1 from '../assets/sl1.png';
-import sl2 from '../assets/sl2.png';
-import sl3 from '../assets/sl3.png';
-import sl4 from '../assets/sl4.png';
 import ls1 from '../assets/ls1.png';
 import ls2 from '../assets/ls2.png';
 import ls3 from '../assets/ls3.png';
@@ -22,7 +18,7 @@ const BanThree = () => {
     const PrevArrow = ({ onClick }) => (
         <button
             onClick={onClick}
-            className=" absolute top-1/2 -left-10 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-20"
+            className=" absolute top-1/2 -left-5 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-20"
         >
             <FaChevronLeft className="text-xl text-black" />
         </button>
@@ -30,7 +26,7 @@ const BanThree = () => {
     const NextArrow = ({ onClick }) => (
         <button
             onClick={onClick}
-            className=" absolute top-1/2 -right-10 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-20"
+            className=" absolute top-1/2 -right-5 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-20"
         >
             <FaChevronRight className="text-xl text-black" />
         </button>
@@ -45,8 +41,36 @@ const BanThree = () => {
         autoplaySpeed: 2000,
         cssEase: "linear",
         prevArrow: <PrevArrow />,
-        nextArrow: <NextArrow />
+        nextArrow: <NextArrow />,
+        
+         responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 390,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+        
     };
+
     return (
 
        <>

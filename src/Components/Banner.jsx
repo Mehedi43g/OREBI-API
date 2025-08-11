@@ -28,12 +28,12 @@ const Banner = () => {
       </div>
     ),
     customPaging: i => (
-      <div
+      <div 
         style={{
           width: "30px",
           color: "transparent",
           borderRight: "3px solid white",
-          padding:"10px 0"
+          padding:"0px 0"
         }}
       >
         0{i + 1}
