@@ -1,6 +1,6 @@
 import { HiMiniXMark, HiOutlineBars3BottomLeft } from "react-icons/hi2"
 import Container from "./Container"
-import { FaCaretRight, FaSortDown, FaUser } from "react-icons/fa"
+import { FaBars, FaCaretRight, FaSortDown, FaUser } from "react-icons/fa"
 import { useEffect, useRef, useState } from "react"
 import { MdSearch } from "react-icons/md"
 import { FaCartShopping } from "react-icons/fa6"
@@ -42,7 +42,7 @@ const Nav = () => {
             <div className="flex py-[10px] items-center ">
                <div className="w-3/12 relative">
                   <div ref={cateRaf} className="flex items-center gap-2 cursor-pointer">
-                     <HiOutlineBars3BottomLeft className="text-black font-dm font-bold" />
+                     <FaBars className="text-black font-dm font-bold text-[14px] sm:text-[10px] md:text-[20px] lg:text-[20px]" />
                      <h2 className="text-black font-dm font-bold text-[14px] sm:text-[10px] md:text-[20px] lg:text-[24px] ">Shop by Category</h2>
                   </div>
                   {show &&

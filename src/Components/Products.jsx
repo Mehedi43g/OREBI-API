@@ -4,6 +4,9 @@ import { FaCaretDown, FaCaretUp, FaThLarge, FaThList } from 'react-icons/fa';
 import { GoDotFill } from 'react-icons/go';
 import { FiPlus } from 'react-icons/fi';
 import { LuMinus } from 'react-icons/lu';
+import Posts from './Posts';
+import { Pagination } from 'react-bootstrap';
+import Paginationg from './Paginationg';
 
 
 
@@ -394,19 +397,15 @@ const Products = () => {
                         <option>4</option>
                       </select>
                     </div>
-                    {/* <Form.Select className='border-1 px-[30px] text-[#767676] border-[#767676] font-bold'>
-                      <option>1</option>
-                      <option value="1">2</option>
-                      <option value="2">3</option>
-                      <option value="3">4</option>
-                      <option value="4">5</option>
-                    </Form.Select> */}
                   </div>
                 </div>
               </div>
             </div>
             <div className="items">
-              hallow
+              <Posts/>
+            </div>
+            <div className="py-5">
+              <Paginationg/>
             </div>
           </div>
         </div>
