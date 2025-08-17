@@ -105,7 +105,7 @@ if (loading) {
                                             <div className=" absolute top-4 left-3 z-5 " >
                                                 <p className=" py-[5px] px-[20px] border-[1px]  bg-[black] text-white font-bold text-[14px] font-dm ">{item.discountPercentage}%</p>
                                             </div>
-                                            <div className=" absolute right-0 bottom-30 w-[350px] bg-white hidden group-hover:block ">
+                                            <div className=" absolute right-0 bottom-20 w-[350px] bg-white hidden group-hover:block ">
                                                 <div className="">
                                                     <div className="flex items-center gap-2 justify-end py-[10px] pr-[10px] cursor-pointer">
                                                         <p>Add to Wish List</p>
@@ -120,7 +120,7 @@ if (loading) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="flex justify-between pl-[20px] pr-[20px] pt-12 ">
+                                            <div className="flex justify-between pl-[20px] pr-[20px] pt-2 ">
                                                 <div className="">
                                                     <p className="font-bold font-dm text-[16px] text-[#262626]">{item.title}</p>
                                                     <p className="font-bold font-dm text-[16px] text-[#8a8686]">{item.category}</p>
