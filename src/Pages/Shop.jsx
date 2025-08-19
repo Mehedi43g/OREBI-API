@@ -11,86 +11,86 @@ import Paginationg from '../Components/Paginationg';
 import Container from '../Components/Container';
 
 const Shop = () => {
-  let [show, setshow] = useState(false)
-  let [on, seoShow] = useState(false)
-  let [toww, sewShow] = useState(false)
-  let [three, seTShow] = useState(false)
-  let [four, seFShow] = useState(false)
-  let [five, seFFShow] = useState(false)
+    let [show, setshow] = useState(false)
+    let [on, seoShow] = useState(false)
+    let [toww, sewShow] = useState(false)
+    let [three, seTShow] = useState(false)
+    let [four, seFShow] = useState(false)
+    let [five, seFFShow] = useState(false)
+  
+  
+    let [sshow, setsShow] = useState(true)
+    let [Oon, seOShow] = useState(false)
+    let [tOw, seOTShow] = useState(false)
+    let [tHree, setHshow] = useState(false)
+    let [Four, setfOshow] = useState(false)
+    let [FiVee, setVShow] = useState(false)
+  
+  
+    let [tshow, settshow] = useState(true)
+    let [Oogn, seOgShow] = useState(false)
+    let [tOgw, seOTgShow] = useState(false)
+    let [tHgree, setgHshow] = useState(false)
+    let [Fourg, setgfOshow] = useState(false)
+    let [FiVeeg, setgVShow] = useState(false)
+  
+  
+    let [rrshow, setRxShow] = useState(true)
+    let [srshow, setsrShow] = useState(false)
+    let [srsghow, setsgrShow] = useState(false)
+    let [srsfhow, setsfrShow] = useState(false)
+    let [srsffhow, setsffrShow] = useState(false)
+    let [srsfffhow, setsfffrShow] = useState(false)
 
-
-  let [sshow, setsShow] = useState(true)
-  let [Oon, seOShow] = useState(false)
-  let [tOw, seOTShow] = useState(false)
-  let [tHree, setHshow] = useState(false)
-  let [Four, setfOshow] = useState(false)
-  let [FiVee, setVShow] = useState(false)
-
-
-  let [tshow, settshow] = useState(true)
-  let [Oogn, seOgShow] = useState(false)
-  let [tOgw, seOTgShow] = useState(false)
-  let [tHgree, setgHshow] = useState(false)
-  let [Fourg, setgfOshow] = useState(false)
-  let [FiVeeg, setgVShow] = useState(false)
-
-
-  let [rrshow, setRxShow] = useState(true)
-  let [srshow, setsrShow] = useState(false)
-  let [srsghow, setsgrShow] = useState(false)
-  let [srsfhow, setsfrShow] = useState(false)
-  let [srsffhow, setsffrShow] = useState(false)
-  let [srsfffhow, setsfffrShow] = useState(false)
-
-  let { info } = useContext(ApiData)
-  let [perPage, setPerPage] = useState(6);
-  let [currentPage, setCurrentPage] = useState(1);
+  let {info} = useContext(ApiData)
+  let [perPage,setPerPage] = useState(6);
+  let [currentPage,setCurrentPage] =useState(1);
   let lastPage = perPage * currentPage
   let firsPage = lastPage - perPage
-  let allPage = info.slice(firsPage, lastPage)
-  let [category, setCategory] = useState([])
-  let [filterCategory, setFilterCategory] = useState([])
+  let allPage = info.slice(firsPage,lastPage)
+  let [category,setCategory] = useState([])
+  let [filterCategory,setFilterCategory] = useState([])
 
-  let pageNumber = []
+  let pageNumber =[]
   for (let i = 1; i <= Math.ceil(info.length / perPage); i++) {
     pageNumber.push(i);
-
+    
   }
-  let paginate = (index) => {
+  let paginate =(index)=>{
     setCurrentPage(index + 1)
-
+    
   }
-  let next = () => {
-    if (currentPage < pageNumber.length)
-      setCurrentPage((state) => state + 1)
+  let next =()=>{
+    if(currentPage < pageNumber.length)
+    setCurrentPage((state)=> state + 1)
   }
-  let previ = () => {
+  let previ =()=>{
     if (currentPage > 1) {
-      setCurrentPage((state) => state - 1);
+      setCurrentPage((state)=> state - 1);
     }
-
+    
 
   }
-  let handlepageNumber = (e) => {
+  let handlepageNumber = (e)=>{
     setPerPage(e.target.value);
   }
-  useEffect(() => {
+  useEffect(()=>{
     setCategory([...new Set(info.map((item) => item.category))]);
-  }, [info]);
-
-  let handleCategory = (citem) => {
-    let filterItem = info.filter((item) => item.category == citem);
+  },[info]);
+  
+  let handleCategory = (citem)=>{
+    let filterItem = info.filter((item)=> item.category == citem);
 
     setFilterCategory(filterItem);
-
+    
   }
   console.log(filterCategory);
 
-
+  
   return (
     <>
-      <Container>
-        <div className="w-full">
+    <Container>
+       <div className="w-full">
           <h4 className="text-[40px] md:text-[49px] text-[#262626] font-dm font-bold mb-2">Products</h4>
           <p className="text-[12px] text-[#767676] font-dm pb-4"> Home &gt; Products</p>
         </div>
@@ -102,22 +102,22 @@ const Shop = () => {
               <h3 className=' font-dm text-[#262626] text-[20px] font-bold'>Shop by Category</h3>
               {show ? <FaCaretUp /> : <FaCaretDown />}
             </div>
-            {show &&
-              <div className="py-5">
+            {show && 
+            <div className="py-5">
                 <ul>
-
-
-                  {category.map((item) => (
-
+                  
+                  
+                  {category.map((item)=>(
+                    
                     <>
-                      <li onClick={() => handleCategory(item)} className='justify-between font-dm text-[#767676] text-[16px] items-center font-bold text-center border-b-[1px] border-[#767676] py-[10px] hover:bg-black duration-300'>{item}</li>
-
-                    </>
-
-                  ))}
+                      <li onClick={()=> handleCategory (item)} className='justify-between font-dm text-[#767676] text-[16px] items-center font-bold text-center border-b-[1px] border-[#767676] py-[10px] hover:bg-black duration-300'>{item}</li>
+                    
+                      </>
+                      
+                    ))}
                 </ul>
               </div>
-
+              
             }
             <div onClick={() => setsShow(!sshow)} className="flex items-center justify-between ">
               <h3 className=' font-dm text-[#262626] text-[20px] font-bold'>Shop by Color</h3>
@@ -344,22 +344,16 @@ const Shop = () => {
 
           <div className="w-9/12">
             <div className="flex justify-between">
-              <div className="icons flex gap-3">
-                <div
-                  onClick={() => setLayout('grid')}
-                  className={`p-[5px] h-7 w-7 flex items-center justify-center border-[1px] border-[#737373] cursor-pointer ${layout === 'grid' ? 'bg-black text-white' : 'text-black'}`}
-                >
-                  <FaThLarge />
-                </div>
-                <div
-                  onClick={() => setLayout('list')}
-                  className={`p-[5px] h-7 w-7 flex items-center justify-center border-[1px] border-[#737373] cursor-pointer ${layout === 'list' ? 'bg-black text-white' : 'text-black'}`}
-                >
-                  <FaThList />
+              <div className="icons ">
+                <div className="flex gap-3">
+                  <div className="p-[5px] text-black hover:text-white hover:bg-black border-[1px] border-[#737373] ">
+                    <FaThLarge />
+                  </div>
+                  <div className="p-[5px] text-black hover:text-white hover:bg-black border-[1px] border-[#737373] ">
+                    <FaThList />
+                  </div>
                 </div>
               </div>
-
-
               <div className="flex gap-2">
                 <div className="droupdown flex gap-2">
                   <div className="flex items-center gap-2">
@@ -386,8 +380,8 @@ const Shop = () => {
                   <p className='text-[#767676] text-[16px] font-dm'>Show:</p>
                   <div className="  px-[10px] ">
                     <div className="w-24">
-                      <select onChange={handlepageNumber}
-                        name="" id="" className='border-[1px] border-[#0059ff7c] py-2 roudned-[5px] pl-20 pr-1 shadow-md'  >
+                      <select onChange={handlepageNumber} 
+                      name=""  id="" className='border-[1px] border-[#0059ff7c] py-2 roudned-[5px] pl-20 pr-1 shadow-md'  >
                         <option value="6">6</option>
                         <option value="12">12</option>
                         <option value="18">18</option>
@@ -400,8 +394,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="items pt-5">
-              <Posts allPage={allPage} filterCategory={filterCategory} />
-
+              <Posts allPage={allPage} filterCategory={filterCategory}/>
             </div>
             <div className="py-5">
               <Paginationg pageNumber={pageNumber} paginate={paginate} next={next} previ={previ} currentPage={currentPage} />
@@ -409,7 +402,7 @@ const Shop = () => {
           </div>
         </div>
 
-      </Container>
+    </Container>
     </>
   )
 }
