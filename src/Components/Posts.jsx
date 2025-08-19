@@ -6,12 +6,11 @@ import { GiSelfLove } from 'react-icons/gi';
 import { TfiReload } from 'react-icons/tfi';
 import { ApiData } from './ContextApi';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Posts = ({ allPage, filterCategory }) => {
-  console.log(filterCategory);
 
   let { loading } = useContext(ApiData)
-  console.log(allPage);
 
   if (loading) {
     return (
@@ -34,12 +33,11 @@ const Posts = ({ allPage, filterCategory }) => {
       {filterCategory.length > 0 ? (
         filterCategory.map((item) => (
           <div className="h-[400px]" key={item.id}>
-            <div className="relative h-full overflow-hidden shadow-md group">
-              <img
-                className="w-full object-cover hover:bg-[#f0f8ff]"
-                src={item.thumbnail}
-                alt=""
-              />
+            <div className="relative h-full overflow-hidden shadow-md group ">
+              <Link to ={`/Shop/${item.id}`}> 
+              
+              <img className="w-full cursor-pointer object-cover hover:bg-[#f0f8ff]" src={item.thumbnail} alt=""/>
+              </Link>
               <div className="absolute top-4 left-3 z-5">
                 <p className="py-[5px] px-[20px] border bg-black text-white font-bold text-[14px] font-dm">
                   {item.discountPercentage}%
@@ -76,11 +74,10 @@ const Posts = ({ allPage, filterCategory }) => {
         allPage.map((item) => (
           <div className="h-[400px]" key={item.id}>
             <div className="relative h-full overflow-hidden shadow-md group">
-              <img
-                className="w-full object-cover hover:bg-[#f0f8ff]"
-                src={item.thumbnail}
-                alt=""
-              />
+              <Link to ={`/Shop/${item.id}`}> 
+              
+              <img className="w-full cursor-pointer object-cover hover:bg-[#f0f8ff]" src={item.thumbnail} alt=""/>
+              </Link>
               <div className="absolute top-4 left-3 z-5">
                 <p className="py-[5px] px-[20px] border bg-black text-white font-bold text-[14px] font-dm">
                   {item.discountPercentage}%
