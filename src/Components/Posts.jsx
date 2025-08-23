@@ -61,7 +61,7 @@ const Posts = ({ allPage, filterCategory }) => {
               <div className="flex justify-between pl-[20px] pr-[20px] pt-2">
                 <div>
                   <p className="font-bold font-dm text-[16px] text-[#262626]">{item.title}</p>
-                  <p className="font-bold font-dm text-[16px] text-[#8a8686]">{item.category}</p>
+                  <p className="font-bold font-dm text-[16px] text-[#8a8686] ">{item.category}</p>
                 </div>
                 <div>
                   <p className="font-dm text-[#767676]">${item.price}</p>
@@ -101,7 +101,7 @@ const Posts = ({ allPage, filterCategory }) => {
               <div className="flex justify-between pl-[20px] pr-[20px] pt-2">
                 <div>
                   <p className="font-bold font-dm text-[16px] text-[#262626]">{item.title}</p>
-                  <p className="font-bold font-dm text-[16px] text-[#8a8686]">{item.category}</p>
+                  <p className="font-bold font-dm text-[16px] text-[#8a8686] ">{item.category}</p>
                 </div>
                 <div>
                   <p className="font-dm text-[#767676]">${item.price}</p>

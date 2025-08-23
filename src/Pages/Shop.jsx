@@ -11,12 +11,7 @@ import Paginationg from '../Components/Paginationg';
 import Container from '../Components/Container';
 
 const Shop = () => {
-    let [show, setshow] = useState(false)
-    let [on, seoShow] = useState(false)
-    let [toww, sewShow] = useState(false)
-    let [three, seTShow] = useState(false)
-    let [four, seFShow] = useState(false)
-    let [five, seFFShow] = useState(false)
+    let [show, setshow] = useState(true)
   
   
     let [sshow, setsShow] = useState(true)
@@ -27,7 +22,7 @@ const Shop = () => {
     let [FiVee, setVShow] = useState(false)
   
   
-    let [tshow, settshow] = useState(true)
+    let [tshow, settshow] = useState(false)
     let [Oogn, seOgShow] = useState(false)
     let [tOgw, seOTgShow] = useState(false)
     let [tHgree, setgHshow] = useState(false)
@@ -110,7 +105,7 @@ const Shop = () => {
                   {category.map((item)=>(
                     
                     <>
-                      <li onClick={()=> handleCategory (item)} className='justify-between font-dm text-[#767676] text-[16px] items-center font-bold text-center border-b-[1px] border-[#767676] py-[10px] hover:bg-black duration-300'>{item}</li>
+                      <li onClick={()=> handleCategory (item)} className='justify-between font-dm text-[#767676] text-[16px] items-center font-bold text-center border-b-[1px] border-[#767676] py-[10px] hover:bg-black duration-300 first-letter:uppercase'>{item}</li>
                     
                       </>
                       
