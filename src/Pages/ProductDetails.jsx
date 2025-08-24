@@ -15,9 +15,11 @@ const ProductDetails = () => {
   let [four, seFShow] = useState(false)
   let [five, seFFShow] = useState(false)
 
-  let [onk, seoShowK] = useState(false)
+  let [onk, seoShowK] = useState(true)
 
   let [showpp, setShowpp] = useState(false)
+
+  let [onshow,setOnShow] = useState(1)
 
   return (
     <div className='pb-[10px]'>
@@ -100,9 +102,9 @@ const ProductDetails = () => {
                 <p className='text-[#262626] font-dm font-bold'>QUANTITY:</p>
               </div>
               <div className="flex items-center border-[1px] border-[#F0F0F0] gap-3">
-                <div className="text-[20px] w-[50px] text-center">-</div>
-                <div className=" text-[20px] w-[50px] text-center ">0</div>
-                <div className="text-[20px] w-[50px] px-[10px]">+</div>
+                <div className="text-[20px] w-[50px] text-center cursor-pointer" onClick={()=>setOnShow(onshow > 1 ? onshow -1 : 1)}>-</div>
+                <div className=" text-[20px] w-[50px] text-center ">{onshow}</div>
+                <div className="text-[20px] w-[50px] px-[10px] cursor-pointer" onClick={()=>setOnShow(onshow +1)}>+</div>
               </div>
             </div>
           </div>
@@ -112,10 +114,10 @@ const ProductDetails = () => {
           </div>
 
           <div className="flex gap-5 py-[10px] border-b-[1px] border-[#F0F0F0]">
-            <div className="w-[150px] text-center py-[10px] border-[1px] hover:bg-black hover:text-white duration-300 text-[#262626] font-dm font-bold">
+            <div className="w-[150px] text-center py-[10px] border-[1px] hover:bg-black hover:text-white duration-300 text-[#262626] font-dm font-bold cursor-pointer">
               <p>Add to Wish List</p>
             </div>
-            <div className="w-[150px] text-center py-[10px] border-[1px] hover:bg-black hover:text-white duration-300 text-[#262626] font-dm font-bold">
+            <div className="w-[150px] text-center py-[10px] border-[1px] hover:bg-black hover:text-white duration-300 text-[#262626] font-dm font-bold cursor-pointer">
               <p>Add to Cart</p>
             </div>
           </div>
@@ -184,23 +186,23 @@ const ProductDetails = () => {
             <div className="">
               <p className='font-dm font-bold text-[20px] text-[#262626]'>Name</p>
               <form action="">
-                <input className='w-full border-b-[1px] border-[#F0F0F0] py-[10px] ' type="text" placeholder='Your name here' />
+                <input className='w-full border-b-[1px] border-[#F0F0F0] py-[10px] focus:outline-none ' type="text" placeholder='Your name here' />
               </form>
             </div>
             <div className="">
               <p className='font-dm font-bold text-[20px] text-[#262626]'>Email</p>
               <form action="">
-                <input className='w-full border-b-[1px] border-[#F0F0F0] py-[10px] ' type="text" placeholder='Your email here' />
+                <input className='w-full border-b-[1px] border-[#F0F0F0] py-[10px] focus:outline-none ' type="text" placeholder='Your email here' />
               </form>
             </div>
             <div className="">
-              <p className='font-dm font-bold text-[20px] text-[#262626]'>Email</p>
+              <p className='font-dm font-bold text-[20px] text-[#262626]'>Review</p>
               <form action="">
-                <input className='w-full border-b-[1px] border-[#F0F0F0] pt-[10px] pb-[70px] pl-[5px]' type="text" placeholder='Your email here' />
+                <input className='w-full  focus:outline-none  border-b-[1px] border-[#F0F0F0] pt-[10px] pb-[70px] pl-[5px] ' type="text" placeholder='Your review here' />
               </form>
             </div>
             <div className="py-[10px]">
-              <div className="text-center w-[200px] py-[10px] bg-black text-white ">
+              <div className="text-center w-[200px] py-[10px] bg-black text-white cursor-pointer">
                 <p>Post</p>
               </div>
             </div>
