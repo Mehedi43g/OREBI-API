@@ -46,8 +46,7 @@ const Shop = () => {
   let [category, setCategory] = useState([])
   let [filterCategory, setFilterCategory] = useState([])
 
-  let [active,setActive] =useState("")
-  let [unActive,setUnActive] =useState("")
+  let [active,setActive] =useState(true)
 
   let pageNumber = []
   for (let i = 1; i <= Math.ceil(info.length / perPage); i++) {
@@ -86,14 +85,17 @@ const Shop = () => {
   let handelAllProduct = () => {
     setFilterCategory('')
   }
-  let handleActive =()=>{
-    setActive("active")
-  }
+
   console.log(active);
-  let handelUnActive =()=>{
-    setUnActive("unActive")
+  let handleGrid =()=>{
+    setActive(true)
+    
   }
-  console.log(unActive);
+  let handleList =()=>{
+    setActive(false)
+    
+  }
+  
   
   return (
     <>
@@ -352,10 +354,10 @@ const Shop = () => {
             <div className="flex justify-between">
               <div className="icons ">
                 <div className="flex gap-3">
-                  <div onClick={handelUnActive} className="p-[5px] text-black hover:text-white hover:bg-black border-[1px] border-[#737373] ">
+                  <div onClick={handleGrid} className={`${active ? "p-[5px] text-black bg-orange-400 border-[1px] border-[#737373]" : "p-[5px] text-black border-[1px] border-[#737373]"  } `}>
                     <FaThLarge  />
                   </div>
-                  <div onClick={handleActive} className="p-[5px] text-black hover:text-white hover:bg-black border-[1px] border-[#737373] ">
+                  <div onClick={handleList} className={`${active ? "p-[5px] text-black border-[1px] border-[#737373]" : "p-[5px] text-black bg-orange-400 border-[1px] border-[#737373]"}`}>
                     <FaThList />
                   </div>
                 </div>
@@ -404,7 +406,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="items pt-5">
-              <Posts allPage={allPage} filterCategory={filterCategory} active={active} unActive={unActive} />
+              <Posts allPage={allPage} filterCategory={filterCategory} active={active} />
             </div>
             <div className="py-5">
               {!filterCategory.length && (
