@@ -223,7 +223,6 @@ const Posts = ({ allPage, filterCategory, active }) => {
                 </div>
                 <div>
                   <p className="py-[10px] font-dm text-[#767676]">${item.price} </p>
-                  <a href="mailto:arshuman@gmail.com">arshuman@gmail.com</a>
 
                 </div>
               </div>
